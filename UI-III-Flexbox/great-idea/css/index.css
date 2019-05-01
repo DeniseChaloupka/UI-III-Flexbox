@@ -1,0 +1,293 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+
+.container1{
+  margin: auto;
+	width: 1000px;  
+
+}
+
+.logo1{
+		margin-left: 200px;
+}
+
+nav1 {
+  display: inline-block;
+  width:70%;
+ }
+
+nav a{
+  padding: 0 15px 0px;
+  color: gray;
+  text-decoration: none;
+}
+
+header{
+  padding: 20px;
+}
+
+.upper-content{
+  text-align: center;
+}
+
+.top-page{
+  display: inline-block;
+  width: 450px;
+  text-align: center;
+  padding: 0px 0px 40px;
+}
+
+h1{
+  font-size: 50pt;
+}
+
+.start{
+  padding: 5px 40px 5px;
+}
+.circlesnippet{
+  display: inline-block;
+  width: 30%;
+  padding: 20px 10px 10px 10px   
+}
+
+.mid-content{
+  border-top: 1px solid black;
+}
+
+
+
+.mid-content .features{
+  display: inline-block;
+  width: 49%;
+  margin-right: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mid-content .about{
+  display: inline-block;
+  width: 49%;
+}
+
+.long-img{
+  display: block;
+  width: 100%;
+}
+
+.lower-content{
+  border-bottom: 1px solid black;
+}
+
+.lower-content .services{
+  display: inline-block;
+  width: 32%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.lower-content .product{
+  display: inline-block;
+  width: 32%;
+  margin: 0px 10px 0px;
+}
+
+.lower-content .vision{
+  display: inline-block;
+  width: 32%;
+}
+
+.contact{
+  margin-top: 30px;
+}
+
+footer{
+  text-align: center;
+  margin-top: 30px;
+}
+/* pt 2 start here */
+
+body{ 
+  max-width: 1000px;
+  margin: auto;
+}
+
+header{
+  margin: 20px 5px;
+  display:flex;
+  ;
+}
+ .links{ 
+  
+   width: 75%;
+   display:flex;
+   justify-content: space-evenly;
+  }
+
+.logo{
+    margin-left: 100px;
+  
+}
+
+nav a{
+  font-style: bold;
+  margin-top: 10px;
+  color:gray;
+}
+
+.services-header-img{
+  width: 100%;
+}
+
+h2{
+  font-size: 25px;
+}
+
+.Services{
+  margin-top: 30px;
+  display:flex;
+  flex-wrap: wrap;
+ }
+
+.big-parent {
+  margin-top: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display:flex;
+  flex-wrap: wrap;
+  }
+
+.child{
+	border: 1.5px solid black;
+	background: whitesmoke;
+  padding:30px;
+  margin: 20px;
+  width: 47.993%;
+ }
+
+.child:nth-child(1){
+  margin-top: 0px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  }
+.child:nth-child(2){
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  }
+
+.child:nth-child(3){
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  }
+.child:nth-child(4){
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  }
+
+.child:nth-child(5){
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  }
+.child:nth-child(6){
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  }
+
+
+.facts-parent{
+  display:flex;
+  justify-content: space-between;
+}
+
+.facts-parent .facts{
+  width: 45%;
+ }
+
+li{
+  margin-top: 15px;
+}
+
+copyright{
+  margin-top: 60px;
+  display:flex;
+  justify-content: center;
+}
